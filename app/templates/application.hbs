@@ -1,3 +1,11 @@
 <h2>Ease Down Arkansas</h2>
-
-{{outlet}}
+{{#mdl-nav title='' fixedHeader=true}}
+  {{mdl-nav-item name='Submit Event'   route=''}}
+  {{mdl-nav-item name='See All Events'  route=''}}
+  {{mdl-nav-item name='Learn About Regions'  route=''}}
+  <div class="mdl-grid">
+  	<div class="mdl-cell mdl-cell--12-col">
+	</div>
+    {{outlet}}
+  </div>
+{{/mdl-nav}}

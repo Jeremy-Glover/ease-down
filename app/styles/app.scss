@@ -1,8 +1,11 @@
 @import 'material-design-lite';
 
+html {
+  background: url(../images/arkansas.jpg) center;
+}
 
 .map {
   transform: rotate(2deg);
-  margin: 5rem;
+  margin-left: 6rem;
   pointer-events: none;
 }
