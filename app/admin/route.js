@@ -16,7 +16,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
         }
 
         // Make the user go to the login screen
-        this.transitionTo('login');
+        this.transitionTo('guide');
         return reject();
       });
     });
