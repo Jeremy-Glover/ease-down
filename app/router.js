@@ -11,6 +11,8 @@ Router.map(function() {
     this.route('see-all');
     this.route('regions');
   });
+  this.route('admin');
+  this.route('register');
 });
 
 export default Router;

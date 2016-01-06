@@ -8,4 +8,5 @@ export default DS.Model.extend({
   url: DS.attr('string'),
   location: DS.attr('string'),
   description: DS.attr('string'),
+  active: DS.attr('boolean'),
 });

@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   //jscs: disable
   var ENV = {
+    apiHost: 'http://localhost:3000',
     modulePrefix: 'final-project',
     environment: environment,
     baseURL: '/',
@@ -10,10 +11,10 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self'",
-      'font-src': "'self'",
-      'connect-src': "'self'",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'connect-src': "'self' http://localhost:3000",
       'img-src': "'self'",
-      'style-src': "'self'",
+      'style-src': "'self' http://fonts.googleapis.com",
       'media-src': "'self'"
     },
     EmberENV: {
