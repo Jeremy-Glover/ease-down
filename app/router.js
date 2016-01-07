@@ -15,6 +15,7 @@ Router.map(function() {
     this.route('event', function() {
       this.route('new');
       this.route('edit');
+      this.route('detail');
     });
   });
   this.route('register');
