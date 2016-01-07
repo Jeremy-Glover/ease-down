@@ -1,7 +1,7 @@
 @import 'material-design-lite';
 
 html {
-  background: url(../images/arkansas-2.jpg) no-repeat center;
+  background: url(../images/arkansas-2.jpg) center;
 }
 
 .map {
@@ -11,4 +11,18 @@ html {
 
 .card {
   background: white;
+}
+
+.mdl-layout__header, .mdl-layout__drawer-button {
+  background: url(../images/arkansas.jpg);
+}
+
+.mdl-navigation__link {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.region__title {
+  margin: 2rem;
+
 }

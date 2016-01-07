@@ -49,6 +49,7 @@
     "ember-simple-form": "0.1.1",
     "ember-svg-link-to": "1.0.0",
     "ember-truth-helpers": "1.2.0",
-    "ember-with-service": "1.1.0"
+    "ember-with-service": "1.1.0",
+    "emberx-select": "2.0.2"
   }
 }
