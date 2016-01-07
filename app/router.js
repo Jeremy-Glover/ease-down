@@ -11,7 +11,12 @@ Router.map(function() {
     this.route('see-all');
     this.route('regions');
   });
-  this.route('admin');
+  this.route('admin', function() {
+    this.route('event', function() {
+      this.route('new');
+      this.route('edit');
+    });
+  });
   this.route('register');
   this.route('login');
 });

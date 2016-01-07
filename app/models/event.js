@@ -4,7 +4,7 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   email: DS.attr('string'),
   phone: DS.attr('number'),
-  dates: DS.attr('number'),
+  dates: DS.attr('string'),
   url: DS.attr('string'),
   location: DS.attr('string'),
   description: DS.attr('string'),
