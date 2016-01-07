@@ -1,1 +1,11 @@
-{{outlet}}
+<h3>Add New Event</h3>
+{{#simple-form onsubmit="addEvent" class="card" as |formValues|}}
+  {{mdl-textfield value=formValues.name name="name" class="edit-form__name" label="Name"}}
+  {{mdl-textfield value=formValues.email name="email" class="edit-form__email" label="Email"}}
+  {{mdl-textfield value=formValues.phone name="phone" class="edit-form__phone" label="Phone"}}
+  {{mdl-textfield value=formValues.dates name="dates" class="edit-form__dates" label="Dates"}}
+  {{mdl-textfield value=formValues.url name="url" class="edit-form__url" label="Website"}}
+  {{mdl-textfield value=formValues.location name="location" class="edit-form__location" label="Location"}}
+  {{mdl-textfield value=formValues.description name="description" class="edit-form__description" label="Description"}}"
+  <button class="form-submit">Submit</button>
+{{/simple-form}}

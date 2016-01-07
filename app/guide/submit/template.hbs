@@ -1,5 +1,5 @@
 <h2>Submit Your Event</h2>
-{{#simple-form onsubmit="submitEvent" as |formValues|}}
+{{#simple-form onsubmit="submitEvent" class="card" as |formValues|}}
   {{mdl-textfield value=formValues.name name="name" class="submit-form__name" label="Name"}}
   {{mdl-textfield value=formValues.email name="email" class="submit-form__email" label="Email"}}
   {{mdl-textfield value=formValues.phone name="phone" class="submit-form__phone" label="Phone"}}
@@ -9,5 +9,5 @@
   {{mdl-textfield value=formValues.description name="description" class="submit-form__description" label="Description"}}
 
 
-  <button>Submit</button>
+  <button class="form-submit">Submit</button>
 {{/simple-form}}

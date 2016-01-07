@@ -18,6 +18,7 @@ Router.map(function() {
       this.route('detail');
     });
   });
+
   this.route('register');
   this.route('login');
 });
