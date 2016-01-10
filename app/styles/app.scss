@@ -19,10 +19,49 @@ html {
 
 .mdl-navigation__link {
   font-size: 15px;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
 }
 
 .region__title {
+  font-family: 'Patua One', cursive;
+  font-weight: 600;
   margin: 2rem;
+  border-bottom: 1px solid;
+}
 
+.region__head {
+  margin: 2rem auto;
+  font-family: 'Patua One', cursive;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.region-container {
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+  max-width: 1000px;
+  align-items: center;
+  font-family: 'Patua One', cursive;
+}
+
+.region__info {
+  position: relative;
+  max-width: 475px;
+  border: 3px #861313 solid;
+  background: rgba(#c8cacb, 0.4);
+  margin: 5px;
+  font-size: 2rem;
+}
+
+.region__text {
+  position: absolute;
+  bottom: 5px;
+  margin: 2rem;
+}
+
+.map-ozarks {
+  transform: rotate(2deg);
+  margin-left: 1rem;
 }
