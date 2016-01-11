@@ -1,13 +1,32 @@
-<h2 class="section-head">Submit Your Event</h2>
-{{#simple-form onsubmit="submitEvent" class="card" as |formValues|}}
-  {{mdl-textfield value=formValues.name name="name" class="submit-form__name" label="Name of Event"}}
-  {{mdl-textfield value=formValues.email name="email" class="submit-form__email" label="Email"}}
-  {{mdl-textfield value=formValues.phone name="phone" class="submit-form__phone" label="Phone"}}
-  {{mdl-textfield value=formValues.dates name="dates" class="submit-form__dates" label="Dates"}}
-  {{mdl-textfield value=formValues.url name="url" class="submit-form__url" label="Website"}}
-  {{mdl-textfield value=formValues.location name="location" class="submit-form__location" label="Location"}}
-  {{mdl-textfield value=formValues.description name="description" class="submit-form__description" label="Description"}}
+<div class="mdl-grid">
+  <h2 class="section-head">Submit Your Event</h2>
+  <div class="submit-container">
 
+    {{#simple-form onsubmit="submitEvent" class="card" as |formValues|}}
+      {{mdl-textfield value=formValues.name name="name" class="submit-form__name" label="Name of Event"}}
+      {{mdl-textfield value=formValues.email name="email" class="submit-form__email" label="Email"}}
+      {{mdl-textfield value=formValues.phone name="phone" class="submit-form__phone" label="Phone"}}
+      {{mdl-textfield value=formValues.dates name="dates" class="submit-form__dates" label="Dates"}}
+      {{mdl-textfield value=formValues.url name="url" class="submit-form__url" label="Website"}}
+      {{mdl-textfield value=formValues.location name="location" class="submit-form__location" label="Location"}}
+      {{mdl-textfield value=formValues.description name="description" class="submit-form__description" label="Description"}}
 
-  <button class="form-submit">Submit</button>
-{{/simple-form}}
+      <div class="dropdown-selector">
+        <label class="region-selector">Region: {{if formValues.region (str-title formValues.region) 'Choose a Region'}}</label>
+
+        {{#mdl-menu class="selector" icon="arrow_drop_down" click=(prevent-default)}}
+          {{#mdl-value-item binding=(mut formValues.region) value='ozarks'}}Ozarks{{/mdl-value-item}}
+          {{#mdl-value-item binding=(mut formValues.region) value='river-valley'}}River Valley{{/mdl-value-item}}
+          {{#mdl-value-item binding=(mut formValues.region) value='central'}}Central{{/mdl-value-item}}
+          {{#mdl-value-item binding=(mut formValues.region) value='delta'}}Delta{{/mdl-value-item}}
+          {{#mdl-value-item binding=(mut formValues.region) value='ouachitas'}}Ouachitas{{/mdl-value-item}}
+          {{#mdl-value-item binding=(mut formValues.region) value='timberlands'}}Timberlands{{/mdl-value-item}}
+        {{/mdl-menu}}
+      </div>
+
+      {{mdl-button class="form-submit" isRaised=true text='Submit'}}
+      {{/simple-form}}
+
+    {{arkansas-map class="map"}}
+  </div>
+</div>
