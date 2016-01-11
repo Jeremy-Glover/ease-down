@@ -4,13 +4,34 @@ html {
   background: url(../images/arkansas-2.jpg) center;
 }
 
+.guide-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1040px;
+  margin: auto;
+}
+
+.quide__instruction {
+  max-width: 475px;
+  border: 3px #861313 solid;
+  background: rgba(#c8cacb, 0.4);
+  margin: 2rem auto;
+}
+
 .map {
   transform: rotate(2deg);
-  align-self: center;
+  margin: 2rem auto;
 }
 
 .card {
-  background: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  border: 3px #861313 solid;
+  background: rgba(#c8cacb, 0.4);
+  margin: 5px;
+  font-size: 2rem;
+  margin: auto;
 }
 
 .mdl-layout__header, .mdl-layout__drawer-button {
@@ -20,7 +41,7 @@ html {
 .mdl-navigation__link {
   font-size: 15px;
   font-family: 'Patua One', cursive;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .region__title {
@@ -30,11 +51,28 @@ html {
   border-bottom: 1px solid;
 }
 
-.region__head {
+.section-head {
   margin: 2rem auto;
   font-family: 'Patua One', cursive;
   font-weight: 600;
   letter-spacing: 2px;
+}
+
+.mdl-textfield {
+  font-family: 'Patua One', cursive;
+  font-weight: 600;
+  color: #0b0b0b;
+
+}
+
+.mdl-textfield__label, .mdl-textfield__label:after {
+  color: #0b0b0b;
+  margin: auto 2rem;
+}
+
+.mdl-textfield__input {
+  padding: 5px;
+  border-bottom: 1px solid;
 }
 
 .region-container {
