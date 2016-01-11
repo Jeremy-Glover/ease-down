@@ -44,6 +44,7 @@ html {
 
 .featured__text {
   margin: 5px 2rem;
+  color: #861313;
 }
 
 .featured {
@@ -57,9 +58,13 @@ html {
   font-family: 'Patua One', cursive;
 }
 
+.featured__title {
+  color: #861313;
+}
+
 .map {
   transform: rotate(2deg);
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 .card {
@@ -68,7 +73,6 @@ html {
   max-width: 450px;
   border: 3px #861313 solid;
   background: rgba(#c8cacb, 0.4);
-  font-size: 2rem;
   margin: auto;
 }
 
@@ -108,11 +112,11 @@ html {
   font-weight: 600;
   color: #0b0b0b;
   margin: auto 2rem;
-  border-bottom: 1px solid;
 }
 
-.submit-container {
+.mdl-grid {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   max-width: 1000px;
 }
