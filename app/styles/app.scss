@@ -4,18 +4,45 @@ html {
   background: url(../images/arkansas-2.jpg) center;
 }
 
+.project-logo {
+  width: 1000px;
+  margin: auto;
+  font-family: 'Patua One', cursive;
+}
+
 .guide-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1040px;
+  max-width: 1000px;
   margin: auto;
 }
 
 .quide__instruction {
-  max-width: 475px;
+  max-width: 450px;
   border: 3px #861313 solid;
-  background: rgba(#c8cacb, 0.4);
-  margin: 2rem auto;
+  background: rgba(#c8cacb, 0.5);
+  margin: 2rem;
+  font-family: 'Patua One', cursive;
+  font-size: 2rem;
+}
+
+.quide__text {
+  margin: auto 2rem;
+}
+
+.featured__text {
+  margin: 5px 2rem;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  height: 33vh;
+  border: 3px #861313 solid;
+  background: rgba(#c8cacb, 0.5);
+  margin: 2rem;
+  font-family: 'Patua One', cursive;
 }
 
 .map {
@@ -29,7 +56,6 @@ html {
   max-width: 400px;
   border: 3px #861313 solid;
   background: rgba(#c8cacb, 0.4);
-  margin: 5px;
   font-size: 2rem;
   margin: auto;
 }
