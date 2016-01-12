@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       let event = this.modelFor(this.routeName);
       event.setProperties(formData);
       event.save().then(() => {
-        this.transitionTo('admin.event.details');
+        this.transitionTo('admin.index');
       });
     },
 

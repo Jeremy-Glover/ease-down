@@ -11,11 +11,12 @@ Router.map(function() {
     this.route('see-all');
     this.route('regions');
   });
+
   this.route('admin', function() {
     this.route('event', function() {
       this.route('new');
       this.route('edit');
-      this.route('detail');
+      this.route('index');
     });
   });
 

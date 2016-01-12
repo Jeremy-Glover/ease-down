@@ -1,1 +1,26 @@
 {{!-- List a table or ul of the events in an #each loop --}}
+{{#link-to "admin.event" class="new-btn"}}New Event{{/link-to}}
+<ul class="event-list">
+  {{#each model as |event|}}
+  <li class="event-list-item">
+    <span class="event-list-item__year">{{ event.name }}</span>
+    <span class="event-list-item__name">{{ event.email }}</span>
+    <span class="event-list-item__name">{{ event.startDate }}</span>
+    <span class="event-list-item__name">{{ event.endDate }}</span>
+    <span class="event-list-item__name">{{ event.url }}</span>
+    <span class="event-list-item__name">{{ event.location}}</span>
+    <span class="event-list-item__name">{{ event.description }}</span>
+    <span class="event-list-item__name">{{ event.description }}</span>
+    {{mdl-checkbox value=valueA text='Active'}}
+    {{#mdl-checkbox value=valueB}}
+      Active
+    {{/mdl-checkbox}}
+    {{mdl-checkbox value=valueA text='Featured'}}
+    {{#mdl-checkbox value=valueB}}
+      Featured
+    {{/mdl-checkbox}}
+
+  {{#link-to "admin.event.edit" carType class="event-list-item__edit"}}Edit{{/link-to}}
+  </li>
+  {{/each}}
+</ul>
