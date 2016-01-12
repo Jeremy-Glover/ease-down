@@ -6,10 +6,11 @@
   background: url(../images/arkansas.jpg);
 }
 
-.mdl-navigation__link {
+.mdl-navigation__link, .mdl-mini-footer--link-list {
   font-size: 15px;
   font-family: 'Patua One', cursive;
   font-weight: 500;
+  color: #f6f2f0;
 }
 
 .mdl-textfield, .mdl-value-item {
