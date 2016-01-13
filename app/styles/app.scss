@@ -35,6 +35,16 @@ html {
   background: url(../images/arkansas.jpg);
 }
 
+.featured-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  height: 33vh;
+  border: 3px $Brand_Red solid;
+  background: rgba(#c8cacb, 0.5);
+  margin: 2rem;
+  font-family: 'Patua One', cursive;
+}
 
 @import 'component';
 @import 'submit';
