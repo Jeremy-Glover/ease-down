@@ -48,7 +48,7 @@
   margin: 4rem auto;
 }
 
-.card {
+.card, .single-event{
   display: flex;
   flex-direction: column;
   max-width: 450px;
@@ -56,6 +56,8 @@
   background: rgba(#c8cacb, 0.4);
   margin: 3rem auto;
 }
+
+
 
 .section-head {
   margin: 2rem auto;

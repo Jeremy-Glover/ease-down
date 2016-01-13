@@ -2,10 +2,12 @@
 {{#simple-form startingValues=model class="card" onsubmit="saveEvent" as |formValues|}}
   {{mdl-textfield value=formValues.name name="name" class="edit-form__name" label="Name"}}
   {{mdl-textfield value=formValues.email name="email" class="edit-form__email" label="Email"}}
-  {{mdl-textfield value=formValues.dates name="dates" class="edit-form__dates" label="Dates"}}
+  {{mdl-textfield value=formValues.startDate name="startDate" class="edit-form__dates" label="Start Date"}}
+  {{mdl-textfield value=formValues.endDate name="endDate" class="edit-form__dates" label="End Date"}}
   {{mdl-textfield value=formValues.url name="url" class="edit-form__url" label="Website"}}
   {{mdl-textfield value=formValues.location name="location" class="edit-form__location" label="Location"}}
   {{mdl-textfield value=formValues.description name="description" class="edit-form__description" label="Description"}}
 
     {{mdl-button class="form-submit" isRaised=true text='Save'}}
+    {{mdl-button action="deleteEvent" class="form-submit" isRaised=true text='Delete'}}
 {{/simple-form}}

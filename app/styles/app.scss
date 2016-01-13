@@ -19,7 +19,7 @@ html {
 }
 
 .quide__instruction {
-  max-width: 450px;
+  max-width: 440px;
   border: 3px $Brand_Red solid;
   background: rgba(#c8cacb, 0.5);
   margin: 2rem;
@@ -38,12 +38,21 @@ html {
 .featured-container {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
+  max-width: 440px;
   height: 33vh;
   border: 3px $Brand_Red solid;
   background: rgba(#c8cacb, 0.5);
   margin: 2rem;
   font-family: 'Patua One', cursive;
+}
+
+.single-event-list__item {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  font-family: 'Patua One', cursive;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 @import 'component';
