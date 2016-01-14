@@ -25,7 +25,7 @@
     </div>
   {{/pikaday-with-time}}
 
-  {{#pikaday-with-time startValue=endDate binding=formValues.startDate as |date|}}
+  {{#pikaday-with-time startValue=endDate binding=formValues.endDate as |date|}}
     <div class="mdl-textfield mdl-js-textfield">
       {{pikaday-input class="mdl-textfield__input" value=date}}
       <label class="mdl-textfield__label" for="sample1">End Date</label>
@@ -35,6 +35,9 @@
   {{mdl-textfield value=formValues.url name="url" class="submit-form__url" label="Website"}}
   {{mdl-textfield value=formValues.location name="location" class="submit-form__location" label="Location"}}
   {{mdl-textfield value=formValues.description name="description" class="submit-form__description" label="Description"}}
+
+  {{mdl-switch text='Active' value=formValues.active}}
+  {{mdl-switch text='Featured' value=formValues.featured}}
 
   {{mdl-button class="form-submit" isRaised=true text='Submit'}}
   {{/simple-form}}

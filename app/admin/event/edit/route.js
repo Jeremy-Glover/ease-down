@@ -8,14 +8,14 @@ export default Ember.Route.extend({
 
       event.setProperties(formValues);
       event.save().then(() => {
-        this.transitionTo('admin.index');
+        this.transitionTo('admin.event');
       });
     },
 
     deleteEvent(formValues) {
       let event = this.modelFor(this.routeName);
       event.destroyRecord().then(() => {
-        this.transitionTo('admin.index');
+        this.transitionTo('admin.event');
       });
     },
   },

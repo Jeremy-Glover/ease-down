@@ -10,4 +10,5 @@ export default DS.Model.extend({
   location: DS.attr('string'),
   description: DS.attr('string'),
   active: DS.attr('boolean'),
+  featured: DS.attr('boolean'),
 });

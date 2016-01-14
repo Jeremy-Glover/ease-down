@@ -10,8 +10,9 @@
     <span class="single-event-list__item">{{ event.url }}</span>
     <span class="single-event-list__item">{{ event.location}}</span>
     <span class="single-event-list__item">{{ event.description }}</span>
-    {{mdl-checkbox value=valueA text='Active'}}
-    {{mdl-checkbox value=valueA text='Featured'}}
+    <span class="single-event-list__item">Active: {{ event.active }}</span>
+    <span class="single-event-list__item">Featured: {{ event.featured }}</span>
+
     {{#link-to "admin.event.edit" event class="event-list-item__edit"}}Edit{{/link-to}}
   </li>
   {{/each}}
