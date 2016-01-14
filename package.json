@@ -46,6 +46,7 @@
     "ember-legacy-views": "0.2.0",
     "ember-material-lite": "0.1.14",
     "ember-material-value-item": "1.1.0",
+    "ember-moment": "5.0.2",
     "ember-new-computed": "1.0.3",
     "ember-pika-date-time": "1.0.1",
     "ember-pikaday": "0.14.0",
