@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('submit');
     this.route('see-all');
     this.route('regions');
+    this.route('region', { path: '/:region' });
   });
 
   this.route('admin', function() {
