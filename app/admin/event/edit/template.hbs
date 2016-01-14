@@ -1,5 +1,16 @@
 <h2>Edit Events</h2>
-{{#simple-form startingValues=model class="card" onsubmit="saveEvent" as |formValues|}}
+{{#simple-form  class="card" onsubmit="saveEvent" startingValues=model as |formValues|}}
+  <div class="dropdown-selector">
+  <label class="region-selector">Region: {{if formValues.region (str-title formValues.region) 'Choose a Region'}}</label>
+  {{#mdl-menu class="selector" icon="arrow_drop_down" click=(prevent-default)}}
+    {{#mdl-value-item binding=(mut formValues.region) value='ozarks'}}Ozarks{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.region) value='river-valley'}}River Valley{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.region) value='central'}}Central{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.region) value='delta'}}Delta{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.region) value='ouachitas'}}Ouachitas{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.region) value='timberlands'}}Timberlands{{/mdl-value-item}}
+  {{/mdl-menu}}
+</div>
   {{mdl-textfield value=formValues.name name="name" class="edit-form__name" label="Name"}}
   {{mdl-textfield value=formValues.email name="email" class="edit-form__email" label="Email"}}
   {{mdl-textfield value=formValues.startDate name="startDate" class="edit-form__dates" label="Start Date"}}

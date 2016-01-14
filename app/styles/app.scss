@@ -5,6 +5,10 @@ html {
   background: url(../images/arkansas-2.jpg) center;
 }
 
+li {
+  list-style: none;
+}
+
 .project-logo {
   width: 1000px;
   margin: auto;
@@ -51,6 +55,7 @@ html {
   flex-direction: column;
   margin: 2rem auto;
   font-family: 'Patua One', cursive;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 2px;
 }

@@ -15,8 +15,7 @@ Router.map(function() {
   this.route('admin', function() {
     this.route('event', function() {
       this.route('new');
-      this.route('edit');
-      this.route('index');
+      this.route('edit', { path: '/:event_id' });
     });
   });
 
