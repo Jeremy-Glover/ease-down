@@ -1,3 +1,12 @@
 {{#each model as |event|}}
-  <p> {{ event.name }}</p>
+  <div class="card">
+
+    <span class="single-event-list__item">{{ event.name }}</span>
+    <span class="single-event-list__item">Dates: {{ moment-format event.startDate "MM/DD/YYYY" }} – {{ moment-format event.endDate "MM/DD/YYYY"}}</span>
+    <span class="single-event-list__item">Location: {{event.location }}</span>
+    <span class="single-event-list__item">{{ event.url }}</span>
+    <span class="single-event-list__item">{{ event.description }}</span>
+  </div>
 {{/each}}
+
+<a href=""></a>

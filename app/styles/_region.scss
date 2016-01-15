@@ -16,7 +16,7 @@
 
 .region__info {
   position: relative;
-  max-width: 455px;
+  max-width: 465px;
   border: 3px $Brand_Red solid;
   background: rgba(#c8cacb, 0.5);
   margin: 1rem;
@@ -25,7 +25,7 @@
 
 .region__text-ozarks {
   position: absolute;
-  bottom: 5px;
+  bottom: 300px;
   margin: 2rem;
 }
 
@@ -34,11 +34,21 @@
   margin-left: 1rem;
 }
 
+.img-ozarks {
+  margin: 1rem;
+  border: 2px $Brand_Red solid;
+}
+
 .region__text-river-valley {
   position: absolute;
-  bottom: 130px;
+  bottom: 400px;
   left: 175px;
   margin: 2rem;
+}
+
+.img-river-valley {
+  margin: 1rem;
+  border: 2px $Brand_Red solid;
 }
 
 .region__text-central {
@@ -49,8 +59,14 @@
 
 .region__text-central-2 {
   position: absolute;
-  bottom: 10px;
+  bottom: 330px;
   margin: 2rem;
+}
+
+.img-central {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: 2px $Brand_Red solid;
 }
 
 .region__text-delta {
@@ -58,6 +74,11 @@
   top: 70px;
   right: 175px;
   margin: 2rem;
+}
+
+.img-delta {
+  margin: 1rem;
+  border: 2px $Brand_Red solid;
 }
 
 .region__text-ouachitas {
@@ -70,6 +91,11 @@
   transform: translate(20%, 10%);
 }
 
+.img-ouachitas {
+  margin: 1rem;
+  border: 2px $Brand_Red solid;
+}
+
 .region__text-timberlands {
   position: absolute;
   top: 70px;
@@ -78,4 +104,9 @@
 
 .map-timberlands {
   transform: translate(5%, -30%) rotate(1.5deg);
+}
+
+.img-timberlands {
+  margin: 1rem;
+  border: 2px $Brand_Red solid;
 }
