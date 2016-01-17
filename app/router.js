@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('see-all');
     this.route('regions');
     this.route('region', { path: '/:region' });
+    this.route('category', { path: '/:category' });
   });
 
   this.route('admin', function() {
