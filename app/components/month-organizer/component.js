@@ -8,7 +8,7 @@ export default Ember.Component.extend({
 
     var now = moment();
     let grouped = items.filter((curr) => {
-      return now.isBefore(curr.get('startDate'));
+      return now.isBefore(curr.get('endDate'));
     }).reduce((carry, curr) => {
       const month = curr.get('startDate').format('MMMM');
 

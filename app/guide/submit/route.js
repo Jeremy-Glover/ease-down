@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       let event = this.store.createRecord('event', formValues);
 
       event.save().then(() => {
-        this.transitionTo('guide');
+        this.transitionTo('guide.submit');
       });
     },
   },

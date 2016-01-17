@@ -9,6 +9,7 @@ export default DS.Model.extend({
   url: DS.attr('string'),
   location: DS.attr('string'),
   description: DS.attr('string'),
+  imageUrl: DS.attr('string'),
   active: DS.attr('boolean'),
   featured: DS.attr('boolean'),
 });
