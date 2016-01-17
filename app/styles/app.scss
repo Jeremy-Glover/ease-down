@@ -42,10 +42,10 @@ li {
 .featured-container {
   display: flex;
   flex-direction: column;
-  max-width: 440px;
+  max-width: 450px;
   height: 33vh;
-  border: 3px $Brand_Red solid;
-  background: rgba(#c8cacb, 0.5);
+  border: 1px black solid;
+  background: url(../images/scroll.jpg);
   margin: 2rem;
   font-family: 'Patua One', cursive;
 }
