@@ -48,6 +48,8 @@ li {
   height: 300px;
   width: 300px;
   margin: 2.5rem 1rem;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .img-category {
@@ -71,7 +73,7 @@ li {
 	cursor: pointer;
 }
 
-.tint:before {
+.tint-sports:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -79,11 +81,86 @@ li {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0,255,255, 0.5);
-	-moz-transition: background .3s linear;
-	-webkit-transition: background .3s linear;
-	-o-transition: background .3s linear;
-	transition: background .3s linear;
+	background: rgba(#ad1010, 0.5);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+.tint-art:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(#2aa7ed, 0.5);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+.tint-food:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(#ebf017, 0.5);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+.tint-festivals:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(#db7b36, 0.5);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+.tint-holiday:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(#3ee31c, 0.5);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+.tint-nature:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(#d98619, 0.5);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
 }
 
 .tint:hover:before {
@@ -92,7 +169,8 @@ li {
 
 .text-art {
   position: absolute;
-  left: 15px;
+  left: 20px;
+  font-size: 2rem;
 }
 
 .text-food {
