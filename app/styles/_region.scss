@@ -1,3 +1,7 @@
+.region__section {
+
+}
+
 .region__title {
   font-family: 'Patua One', cursive;
   font-weight: 600;
@@ -30,8 +34,7 @@
 }
 
 .map-ozarks {
-  transform: rotate(2deg);
-  margin-left: 1rem;
+  transform: rotate(2deg) translate(10%, -10%);
 }
 
 .img-ozarks {

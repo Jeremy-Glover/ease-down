@@ -1,15 +1,1 @@
-<<div class="see-all-container">
-  <ul class="event-list">
-  {{#each model as |event|}}
-  <li class="event-list-item">
-    <span class="event-list-item__name">{{ event.name }}</span>
-    <span class="event-list-item__email">{{ event.email }}</span>
-    <span class="event-list-item__start-date">{{ event.startDate }}</span>
-    <span class="event-list-item__end-date">{{ event.endDate }}</span>
-    <span class="event-list-item__url">{{ event.url }}</span>
-    <span class="event-list-item__location">{{ event.location}}</span>
-    <span class="event-list-item__description">{{ event.description }}</span>
-  </li>
-  {{/each}}
-  </ul>
-  </div>
+{{event-list events=model}}

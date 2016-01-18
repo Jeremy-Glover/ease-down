@@ -1,6 +1,8 @@
 <div class="guide-container">
   <div class="guide-left">
+
     {{featured-event class="featured"}}
+
     <div class="quide__instruction">
       <h4 class="region__title">Click A Region For Event Listings! -></h4>
       <p class="quide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -14,27 +16,39 @@
 </div>
   <div class="guide__category">
     <div class="guide__category-item category-art">
-      <a href="arts-film-music"><div class="tint tint-art"><img src="images/arts.jpg" alt="Arts, Film & Music" class="img-category img-art"></div></a>
+      {{#link-to "guide.category" "arts-film-music"}}
+        <div class="tint tint-art"><img src="images/arts.jpg" alt="Arts, Film & Music" class="img-category img-art"></div>
+      {{/link-to}}
       <p class="guide__category-item-text text-art">Arts, Film & Music</p>
     </div>
     <div class="guide__category-item category-food">
-      <a href="food-drink"><div class="tint tint-food"><img src="images/food.jpg" alt="Farmer's Market, Food & Drink" class="img-category img-food"></div></a>
-      <p class="guide__category-item-text text-food">Farmer's Market, Food & Drink</p>
+      {{#link-to "guide.category" "food-drink"}}
+        <div class="tint tint-food"><img src="images/food.jpg" alt="Farmer's Market, Food & Drink" class="img-category img-food"></div>
+      {{/link-to}}
+      <p class="guide__category-item-text text-food">Farmer's Markets, Food & Drink</p>
     </div>
     <div class="guide__category-item category-festivals">
-      <a href="festival-fairs"><<div class="tint tint-festivals"><img src="images/festivals.jpg" alt="Festival's & Fairs" class="img-category"></div></a>
+      {{#link-to "guide.category" "festival-fairs"}}
+        <div class="tint tint-festivals"><img src="images/festivals.jpg" alt="Festival's & Fairs" class="img-category"></div>
+      {{/link-to}}
       <p class="guide__category-item-text text-festivals">Festivals & Fairs</p>
     </div>
     <div class="guide__category-item category-holiday">
-      <a href="holiday-events"><div class="tint tint-holiday"><img src="images/holiday.jpg" alt="Holiday Events" class="img-category"></div></a>
+      {{#link-to "guide.category" "holiday-events"}}
+        <div class="tint tint-holiday"><img src="images/holiday.jpg" alt="Holiday Events" class="img-category"></div>
+      {{/link-to}}
       <p class="guide__category-item-text text-holiday">Holiday Events</p>
     </div>
     <div class="guide__category-item category-nature">
-      <a href="nature"><div class="tint tint-nature"><img src="images/nature.jpg" alt="Nature" class="img-category"></div></a>
+      {{#link-to "guide.category" "nature"}}
+        <div class="tint tint-nature"><img src="images/nature.jpg" alt="Nature" class="img-category"></div>
+      {{/link-to}}
       <p class="guide__category-item-text text-nature">Nature</p>
     </div>
     <div class="guide__category-item category-sports">
-      <a href="sporting-events"><div class="tint tint-sports"><img src="images/sports.jpg" alt="Sporting Events" class="img-category"></div></a>
-      <p class="guide__category-item-text text-sports">Sporting Events</p>
+      {{#link-to "guide.category" "sporting-events"}}
+        <div class="tint tint-sports"><img src="images/sports.jpg" alt="Sports" class="img-category"></div>
+      {{/link-to}}
+      <p class="guide__category-item-text text-sports">Sports</p>
     </div>
   </div>

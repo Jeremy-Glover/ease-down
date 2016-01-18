@@ -1,6 +1,4 @@
-{{log model.length}}
-
-{{#month-organizer items=model as |group|}}
+{{#month-organizer items=events as |group|}}
   <h3>{{group.label}}</h3>
 
   {{#each group.items as |event|}}

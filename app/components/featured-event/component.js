@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
-  model() {
-    return this.store.query('event', { featured: true });
-  },
+export default Ember.Component.extend({
+  store: Ember.inject.service(),
+
+  model: Ember.computed(function() {
+    return this.get('store').query('event', { featured: true });
+  }),
 });
