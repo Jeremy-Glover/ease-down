@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   //jscs: disable
   var ENV = {
-    apiHost: 'http://localhost:3000',
+    apiHost: 'https://ease-down.herokuapp.com',
     modulePrefix: 'final-project',
     environment: environment,
     baseURL: '/',
@@ -11,10 +11,10 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self'",
-      'font-src': "'self' http://fonts.gstatic.com",
-      'connect-src': "'self' http://localhost:3000",
+      'font-src': "'self' https://fonts.gstatic.com https://maxcdn.bootstrapcdn.com",
+      'connect-src': "'self' https://ease-down.herokuapp.com",
       'img-src': "'self'",
-      'style-src': "'self' http://fonts.googleapis.com",
+      'style-src': "'self' https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com",
       'media-src': "'self'"
     },
     EmberENV: {
@@ -31,8 +31,8 @@ module.exports = function(environment) {
       // when it is created
     },
     'ember-simple-auth': {
-      routeAfterAuthentication: 'admin',
-      routeIfAlreadyAuthenticated: 'admin',
+      routeAfterAuthentication: 'guide',
+      routeIfAlreadyAuthenticated: 'guide',
     }
   };
 

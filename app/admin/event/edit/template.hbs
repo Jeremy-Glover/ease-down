@@ -29,16 +29,16 @@
   {{#pikaday-with-time startValue=startDate binding=formValues.startDate as |date|}}
     <div class="mdl-textfield mdl-js-textfield">
       {{pikaday-input class="mdl-textfield__input" value=date}}
-      <label class="mdl-textfield__label" for="sample1">Start Date: {{formValues.startDate}}</label>
+      <label class="mdl-textfield__label" for="sample1">Start Date: {{ moment-format formValues.startDate "MM/DD/YYYY" }}</label>
     </div>
   {{/pikaday-with-time}}
 
   {{#pikaday-with-time startValue=endDate binding=formValues.endDate as |date|}}
     <div class="mdl-textfield mdl-js-textfield">
       {{pikaday-input class="mdl-textfield__input" value=date}}
-      <label class="mdl-textfield__label" for="sample1">End Date: {{formValues.endDate}}</label>
+      <label class="mdl-textfield__label" for="sample1">End Date: {{ moment-format formValues.endDate "MM/DD/YYYY" }}</label>
     </div>
-  {{/pikaday-with-time}}
+  {{/pikaday-with-time}}  moment-format event.startDate "MM/DD/YYYY"
   {{mdl-textfield value=formValues.url name="url" class="edit-form__url" label="Website"}}
   {{mdl-textfield value=formValues.location name="location" class="edit-form__location" label="Location"}}
   {{mdl-textfield value=formValues.description name="description" class="edit-form__description" label="Description"}}

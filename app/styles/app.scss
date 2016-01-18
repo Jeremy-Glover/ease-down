@@ -1,6 +1,6 @@
 @import 'material-design-lite';
 $Brand_Red: #861313;
-
+$drop_shadow: 0 6px 0 0 rgba(192, 195, 196, 0.7);
 html {
   background: url(../images/arkansas-2.jpg) center;
 }
@@ -9,10 +9,24 @@ li {
   list-style: none;
 }
 
-.project-logo {
-  width: 1000px;
-  margin: auto;
-  font-family: 'Patua One', cursive;
+.guide-logo {
+  max-width: 450px;
+  max-height: 400px;
+  margin: 3rem auto;
+  background: url(../images/logo-sign.jpg) center;
+  border-radius: 98%;
+  box-shadow:
+    0 0 0 10px hsl(0, 0%, 80%),
+    0 0 0 15px hsl(0, 0%, 90%),
+    0 0 0 20px hsl(0, 0%, 95%);
+}
+
+.guide-logo__text {
+  font-size: 4rem;
+  font-family: 'Sigmar One', cursive;
+  padding: 2.5rem;
+  color: $Brand_Red;
+  box-shadow: $drop_shadow;
 }
 
 .guide-container {
@@ -29,6 +43,9 @@ li {
   margin: 2rem;
   font-family: 'Patua One', cursive;
   font-size: 2rem;
+  box-shadow:
+    0 0 0 10px hsl(0, 0%, 80%),
+    0 0 0 15px hsl(0, 0%, 90%);
 }
 
 .quide__text {
@@ -205,12 +222,15 @@ li {
 .featured-container {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
-  height: 33vh;
+  max-width: 440px;
   border: 1px black solid;
+
   background: url(../images/scroll.jpg);
-  margin: 2rem;
+  margin: 3rem auto;
   font-family: 'Patua One', cursive;
+  box-shadow:
+    0 0 0 10px hsl(0, 0%, 80%),
+    0 0 0 15px hsl(0, 0%, 90%);
 }
 
 .single-event-list__item {

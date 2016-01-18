@@ -3,7 +3,7 @@
   {{#each model as |event|}}
       <span class="featured__text-name">{{event.name}}</span>
       <span class="featured__text">Location: {{event.location}}</span>
-      <span class="featured__text">Dates: {{event.dates}}</span>
+      <span class="featured__text">Dates: {{ moment-format event.startDate "MM/DD/YYYY" }} – {{ moment-format event.endDate "MM/DD/YYYY"}}</span>
       <span class="featured__text">Website: {{event.url}}</span>
       <span class="featured__text">{{event.description}}</span>
       <span class="single-event-list__item"><img src={{event.imageUrl}}></span>
