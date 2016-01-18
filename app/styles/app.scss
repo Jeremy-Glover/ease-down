@@ -35,6 +35,91 @@ li {
   margin: 1rem 2rem;
 }
 
+.guide__category {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.guide__category-item {
+  position: relative;
+  align-content: center;
+  height: 300px;
+  width: 300px;
+  margin: 2.5rem 1rem;
+}
+
+.img-category {
+  border: 2px #2b0a0a solid;
+}
+
+.guide__category-item-text {
+  position: absolute;
+  bottom: 65px;
+
+  color: #e7ebec;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: 'Patua One', cursive;
+  letter-spacing: 2px;
+}
+
+.tint {
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+
+.tint:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,255,255, 0.5);
+	-moz-transition: background .3s linear;
+	-webkit-transition: background .3s linear;
+	-o-transition: background .3s linear;
+	transition: background .3s linear;
+}
+
+.tint:hover:before {
+	background: none;
+}
+
+.text-art {
+  position: absolute;
+  left: 15px;
+}
+
+.text-food {
+  position: absolute;
+  left: 20px;
+}
+
+.text-festivals {
+  position: absolute;
+  left: 20px;
+}
+
+.text-holiday {
+  position: absolute;
+  left: 45px;
+}
+
+.text-nature {
+  position: absolute;
+  left: 100px;
+}
+
+.text-sports {
+  position: absolute;
+  left: 35px;
+}
+
 .mdl-mini-footer {
   background: url(../images/arkansas.jpg);
 }
