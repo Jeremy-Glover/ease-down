@@ -1,6 +1,7 @@
 @import 'material-design-lite';
 $Brand_Red: #861313;
 $drop_shadow: 0 6px 0 0 rgba(192, 195, 196, 0.7);
+
 html {
   background: url(../images/arkansas-2.jpg) center;
 }
@@ -26,13 +27,26 @@ li {
   font-family: 'Sigmar One', cursive;
   padding: 2.5rem;
   color: $Brand_Red;
-  box-shadow: $drop_shadow;
 }
 
 .guide-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 1040px;
+  margin: auto;
+}
+
+.guide-left, .guide-right {
+  margin: 1rem;
+}
+
+.guide-map {
+  margin-left: 2rem;
+}
+
+.group-month {
+  font-size: 4rem;
+  font-family: 'Sigmar One', cursive;
   margin: auto;
 }
 
@@ -40,7 +54,7 @@ li {
   max-width: 440px;
   border: 3px $Brand_Red solid;
   background: rgba(#c8cacb, 0.5);
-  margin: 2rem;
+  margin-top: 10rem;
   font-family: 'Patua One', cursive;
   font-size: 2rem;
   box-shadow:
@@ -224,14 +238,17 @@ li {
   display: flex;
   flex-direction: column;
   max-width: 440px;
-
-
   background: url(../images/scroll.jpg);
   margin: 3rem auto;
   font-family: 'Patua One', cursive;
   box-shadow:
     0 0 0 10px hsl(0, 0%, 80%),
     0 0 0 15px hsl(0, 0%, 90%);
+}
+
+.featured-title {
+  font-family: 'Sigmar One', cursive;
+  margin: 1.3rem auto;
 }
 
 .single-event-list__item {
