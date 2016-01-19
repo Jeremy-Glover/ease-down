@@ -49,7 +49,8 @@ li {
 }
 
 .quide__text {
-  margin: 1rem 2rem;
+  margin: .5rem 1rem;
+  font-size: 1.3rem;
 }
 
 .guide__category {
@@ -223,7 +224,7 @@ li {
   display: flex;
   flex-direction: column;
   max-width: 440px;
-  border: 1px black solid;
+
 
   background: url(../images/scroll.jpg);
   margin: 3rem auto;

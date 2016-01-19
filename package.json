@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist ease-down.surge.sh"
   },
   "repository": "",
   "engines": {
@@ -36,6 +37,7 @@
     "ember-cli-release": "0.2.8",
     "ember-cli-sass": "4.2.1",
     "ember-cli-sri": "^1.2.0",
+    "ember-cli-surge": "1.0.5",
     "ember-cli-uglify": "^1.2.0",
     "ember-composability": "0.2.1",
     "ember-data": "^1.13.15",
@@ -58,5 +60,8 @@
     "ember-truth-helpers": "1.2.0",
     "ember-with-service": "1.1.0",
     "emberx-select": "2.0.2"
+  },
+  "dependencies": {
+    "surge": "^0.17.6"
   }
 }
