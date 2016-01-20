@@ -49,6 +49,7 @@
 .featured__text {
   margin: 5px 2rem;
   color: $Brand_Red;
+
 }
 
 .featured__title {
@@ -64,10 +65,26 @@
 .card, .single-event {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
-  border: 3px $Brand_Red solid;
-  background: rgba(#c8cacb, 0.4);
-  margin: 3rem auto;
+  flex: wrap;
+  max-width: 700px;
+  border: 5px $Brand_Red solid;
+  background: rgba(#c8cacb, 0.7);
+  margin: 2rem 8rem;
+}
+
+.single-event-list__item-name {
+  font-size: 3rem;
+  margin: 4rem auto;
+  font-family: 'Patua One', cursive;
+  font-weight: 600;
+  letter-spacing: 2px;
+  align-content: center;
+}
+
+.single-event-list__item-img {
+  align-self: center;
+  border: 2px $Brand_Red solid;
+  margin: 2rem auto;
 }
 
 .section-head {

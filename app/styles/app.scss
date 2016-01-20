@@ -45,25 +45,29 @@ li {
 }
 
 .group-month {
+  display: flex;
+  justify-content: flex-start;
   font-size: 4rem;
   font-family: 'Sigmar One', cursive;
-  margin: auto;
+  margin: 4rem 35rem 4rem 5rem;
+  border-bottom: 5px #0f0f0f solid;
 }
 
 .quide__instruction {
   max-width: 440px;
   border: 3px $Brand_Red solid;
-  background: rgba(#c8cacb, 0.5);
-  margin-top: 10rem;
+  background: rgba(#c8cacb, 0.7);
+  margin-top: 7rem;
   font-family: 'Patua One', cursive;
   font-size: 2rem;
   box-shadow:
     0 0 0 10px hsl(0, 0%, 80%),
-    0 0 0 15px hsl(0, 0%, 90%);
+    0 0 0 15px hsl(0, 0%, 90%),
+    0 0 0 20px hsl(0, 0%, 95%);
 }
 
 .quide__text {
-  margin: .5rem 1rem;
+  margin: .8rem 1.2rem;
   font-size: 1.3rem;
 }
 
@@ -254,7 +258,7 @@ li {
 .single-event-list__item {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto;
+  margin: 2rem;
   font-family: 'Patua One', cursive;
   font-size: 1.5rem;
   font-weight: 600;
