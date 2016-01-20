@@ -10,8 +10,8 @@ Router.map(function() {
     this.route('submit');
     this.route('see-all');
     this.route('regions');
-    this.route('region', { path: '/:region' });
-    this.route('category', { path: '/:category' });
+    this.route('region', { path: '/region/:region' });
+    this.route('category', { path: '/category/:category' });
   });
 
   this.route('admin', function() {

@@ -1,9 +1,12 @@
+import sameEndDate from 'final-project/utils/same-end-date';
 import Ember from 'ember';
 
 export default Ember.Route.extend({
 
   actions: {
     saveEvent(formValues) {
+      formValues = sameEndDate(formValues);
+
       let event = this.modelFor(this.routeName);
 
       event.setProperties(formValues);

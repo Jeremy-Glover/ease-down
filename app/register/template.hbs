@@ -1,10 +1,13 @@
-{{#simple-form onsubmit="registerUser" as |user|}}
-  {{input value=user.email placeholder="Email"}}
-  {{input type="password" value=user.password placeholder="Password"}}
-  {{input type="password" value=user.password_confirmation placeholder="Password Confirmation"}}
+<div class="register-form">
+  <h2 class="section-head">Register Admin User</h2>
+  {{#simple-form  class="card" onsubmit="registerUser" as |user|}}
+    {{input value=user.email placeholder="Email"}}
+    {{input type="password" value=user.password placeholder="Password"}}
+    {{input type="password" value=user.password_confirmation placeholder="Password Confirmation"}}
 
-  {{input value=user.firstName placeholder="First Name"}}
-  {{input value=user.lasttName placeholder="Last Name"}}
+    {{input value=user.firstName placeholder="First Name"}}
+    {{input value=user.lasttName placeholder="Last Name"}}
 
-  <button>Submit</button>
-{{/simple-form}}
+    <button class="form-submit">Submit</button>
+  {{/simple-form}}
+</div>
