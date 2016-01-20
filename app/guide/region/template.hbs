@@ -6,12 +6,13 @@
   {{#each group.items as |event|}}
     <div class="card">
 
-      <span class="single-event-list__item">{{ event.name }}</span>
+      <span class="single-event-list__item region__title">{{ event.name }}</span>
       <span class="single-event-list__item">Dates: {{ moment-format event.startDate "MM/DD/YYYY" }} – {{ moment-format event.endDate "MM/DD/YYYY"}}</span>
       <span class="single-event-list__item">Location: {{event.location }}</span>
+      <span class="single-event-list__item">Description: {{ event.description }}</span>
       <span class="single-event-list__item">{{ event.url }}</span>
-      <span class="single-event-list__item">{{ event.description }}</span>
-      <span class="single-event-list__item"><img src={{event.imageUrl}}></span>
+      <span class="single-event-list__item">{{ event.email }}</span>
+      <span class="single-event-list__item-img"><img src={{event.imageUrl}}></span>
 
     </div>
   {{/each}}
