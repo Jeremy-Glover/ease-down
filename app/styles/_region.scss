@@ -18,98 +18,119 @@
   position: relative;
   max-width: 465px;
   border: 3px $Brand_Red solid;
-  background: rgba(#c8cacb, 0.5);
+  background: rgba(#c8cacb, 0.7);
   margin: 1rem;
   font-size: 2rem;
 }
 
-.region-text {
-  font-size: 1.2rem;
+.region-head {
+  font-size: 4rem;
+  font-family: 'Sigmar One', cursive;
+  border-bottom: 5px #0f0f0f solid;
+  margin: 3rem auto;
+  align-content: center;;
 }
 
 .region__text-ozarks {
   position: absolute;
-  bottom: 380px;
+  top: 200px;
   margin: 2rem;
+  font-size: 1.2rem;
 }
 
 .map-ozarks {
-  transform: rotate(2deg) translate(20px, 10px);
+  transform: rotate(2deg) translate(20px, 20px);
 }
 
 .img-ozarks {
-  margin: 9rem 1.5rem;
+  margin: 12rem 1.5rem;
   border: 2px $Brand_Red solid;
 }
 
 .region__text-river-valley {
   position: absolute;
-  top: 130px;
-  left: 185px;
+  top: 260px;
   margin: 2rem;
+  font-size: 1.2rem;
+}
+
+.map-river-valley {
+  transform: translate(30px, -20px);
 }
 
 .img-river-valley {
-  margin: 1.5rem;
+  margin: 7.8rem 1.5rem;
   border: 2px $Brand_Red solid;
+}
+
+.map-central {
+  transform: translateY(30px);
 }
 
 .region__text-central {
   position: absolute;
-  top: 70px;
+  top: 60px;
   margin: 2rem;
+  font-size: 1.2rem;
 }
 
 .region__text-central-2 {
   position: absolute;
-  bottom: 330px;
+  bottom: 340px;
   margin: 2rem;
+  font-size: 1.2rem;
 }
 
 .img-central {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 8rem 0 1rem 1.5rem;
   border: 2px $Brand_Red solid;
 }
 
 .region__text-delta {
   position: absolute;
   top: 70px;
-  right: 175px;
+  right: 180px;
   margin: 2rem;
+  font-size: 1.2rem;
+}
+
+.map-delta {
+  transform: translateY(5px);
 }
 
 .img-delta {
-  margin: 1.5rem;
+  margin: 5.9rem 1.5rem;
   border: 2px $Brand_Red solid;
 }
 
 .region__text-ouachitas {
   position: absolute;
-  top: 70px;
+  top: 60px;
   margin: 2rem;
+  font-size: 1.2rem;
 }
 
 .map-ouachitas {
-  transform: translate(20%, 10%);
+  transform: translate(20px, 22px);
 }
 
 .img-ouachitas {
-  margin: 1.5rem;
+  margin: 3rem 1.5rem;
   border: 2px $Brand_Red solid;
 }
 
 .region__text-timberlands {
   position: absolute;
-  top: 70px;
+  top: 60px;
   margin: 2rem;
+  font-size: 1.2rem;
 }
 
 .map-timberlands {
-  transform: translate(5%, -30%) rotate(1.5deg);
+  transform: translate(10px, -2px) rotate(1.5deg);
 }
 
 .img-timberlands {
-  margin: 1.5rem;
+  margin: 4.8rem 1.5rem;
   border: 2px $Brand_Red solid;
 }
