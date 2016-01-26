@@ -18,12 +18,12 @@
     {{log model}}
   <label class="region-selector">Category: {{if formValues.category (str-title formValues.category) 'Choose a Category'}}</label>
   {{#mdl-menu class="selector" icon="arrow_drop_down" click=(prevent-default)}}
-    {{#mdl-value-item binding=(mut formValues.category) value='ozarks'}}Arts, Film & Music{{/mdl-value-item}}
-    {{#mdl-value-item binding=(mut formValues.category) value='river-valley'}}Farmer's Markets, Food & Drink{{/mdl-value-item}}
-    {{#mdl-value-item binding=(mut formValues.category) value='central'}}Festivals & Fairs{{/mdl-value-item}}
-    {{#mdl-value-item binding=(mut formValues.category) value='delta'}}Holiday Events{{/mdl-value-item}}
-    {{#mdl-value-item binding=(mut formValues.category) value='ouachitas'}}Nature{{/mdl-value-item}}
-    {{#mdl-value-item binding=(mut formValues.category) value='timberlands'}}Sports{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.category) value='arts-film-music'}}Arts, Film & Music{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.category) value='food-wine'}}Farmer's Markets, Food & Drink{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.category) value='festival-fairs'}}Festivals & Fairs{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.category) value='holiday-events'}}Holiday Events{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.category) value='nature'}}Nature{{/mdl-value-item}}
+    {{#mdl-value-item binding=(mut formValues.category) value='sporting-events'}}Sports{{/mdl-value-item}}
   {{/mdl-menu}}
 </div>
   {{mdl-textfield value=formValues.name name="name" class="submit-form__name" label="Name of Event"}}
