@@ -49,17 +49,16 @@ li {
   justify-content: flex-start;
   font-size: 4rem;
   font-family: 'Sigmar One', cursive;
-  margin: 4rem 35rem 4rem 5rem;
+  margin: 2rem 35rem 2rem 5rem;
   border-bottom: 5px #0f0f0f solid;
 }
 
 .quide__instruction {
   max-width: 430px;
-  border: 3px $Brand_Red solid;
+  border: 5px $Brand_Red solid;
   background: rgba(#c8cacb, 0.8);
-  margin: 4.5rem 0 0 5rem;;
+  margin: 3.3rem 0 0 5rem;;
   font-family: 'Patua One', cursive;
-  font-size: 2rem;
   box-shadow:
     0 0 0 10px hsl(0, 0%, 80%),
     0 0 0 15px hsl(0, 0%, 90%),
@@ -67,8 +66,8 @@ li {
 }
 
 .quide__text {
-  margin: .8rem 1.2rem;
-  font-size: 1.3rem;
+  margin: .5rem 1rem;
+  font-size: 1.15rem;
 }
 
 .guide__category {
@@ -211,7 +210,16 @@ li {
 
 .text-food {
   position: absolute;
-  left: 20px;
+  bottom: 100px;
+  left: 15px;
+  color: #ffffff
+}
+
+.text-food2 {
+  position: absolute;
+  bottom: 75px;
+  left: 55px;
+  color: #ffffff
 }
 
 .text-festivals {
@@ -242,6 +250,7 @@ li {
   display: flex;
   flex-direction: column;
   max-width: 435px;
+  height: 580px;
   background: url(../images/scroll-2.jpg);
   margin: 6rem 1rem;
   font-family: 'Patua One', cursive;
@@ -251,17 +260,19 @@ li {
     0 0 0 20px hsl(0, 0%, 95%);
 }
 
-.featured-title {
+.featured-header {
   font-family: 'Sigmar One', cursive;
   margin: 1.5rem auto;
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .single-event-list__item {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: .5rem 2rem;
   font-family: 'Patua One', cursive;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 2px;
 }

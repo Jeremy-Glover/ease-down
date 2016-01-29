@@ -48,13 +48,16 @@
 
 .featured__text {
   margin: 5px 2rem;
-  color: $Brand_Red;
+  font-size: 1.2rem;
 
 }
 
 .featured__title {
-  margin: auto 2rem;
-  color: $Brand_Red;
+  font-family: 'Patua One', cursive;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem;
+  border-bottom: 1px solid;
 }
 
 .map {
@@ -84,7 +87,7 @@
 .single-event-list__item-img {
   align-self: center;
   border: 2px $Brand_Red solid;
-  margin: 2rem auto;
+  margin: .5rem auto;
 }
 
 .section-head {
