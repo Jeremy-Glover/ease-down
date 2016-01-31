@@ -1,6 +1,5 @@
 <div class="mdl-grid">
-
-    {{#simple-form onsubmit="submitEvent" class="card" as |formValues|}}
+  {{#simple-form onsubmit="submitEvent" class="card" as |formValues|}}
       <h2 class="section-head">Submit An Event</h2>
 
       <div class="dropdown-selector">
@@ -52,7 +51,7 @@
 
       {{mdl-button class="form-submit" isRaised=true text='Submit'}}
       {{/simple-form}}
-      <div class="guide-map">
+      <div class="submit-map">
         {{arkansas-map class="map"}}
       </div>
 </div>

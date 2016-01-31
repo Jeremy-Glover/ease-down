@@ -2,6 +2,8 @@
 $Brand_Red: #861313;
 $drop_shadow: 0 6px 0 0 rgba(192, 195, 196, 0.7);
 
+//All of the hompeage styling is here
+
 html {
   background: url(../images/arkansas-2.jpg) center;
 }
@@ -57,7 +59,7 @@ li {
   max-width: 430px;
   border: 5px $Brand_Red solid;
   background: rgba(#c8cacb, 0.8);
-  margin: 3.3rem 0 0 5rem;;
+  margin: 3.3rem 0 4rem 5rem;;
   font-family: 'Patua One', cursive;
   box-shadow:
     0 0 0 10px hsl(0, 0%, 80%),
@@ -95,7 +97,7 @@ li {
   position: absolute;
   bottom: 65px;
 
-  color: #e7ebec;
+  color: #ffffff;
   font-size: 2.2rem;
   font-weight: 500;
   font-family: 'Patua One', cursive;
@@ -240,49 +242,6 @@ li {
 .text-sports {
   position: absolute;
   left: 95px;
-}
-
-.mdl-mini-footer {
-  background: url(../images/arkansas-4.jpg);
-}
-
-.featured-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 435px;
-  height: 580px;
-  background: url(../images/scroll-2.jpg);
-  margin: 6rem 1rem;
-  font-family: 'Patua One', cursive;
-  box-shadow:
-    0 0 0 10px hsl(0, 0%, 80%),
-    0 0 0 15px hsl(0, 0%, 90%),
-    0 0 0 20px hsl(0, 0%, 95%);
-}
-
-.featured-header {
-  font-family: 'Sigmar One', cursive;
-  margin: 1.5rem auto;
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-
-.single-event-list__item {
-  display: flex;
-  flex-direction: column;
-  margin: .5rem 2rem;
-  font-family: 'Patua One', cursive;
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.login-form, .register-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  height: 100vh;
-  margin: auto;
 }
 
 .compass {
