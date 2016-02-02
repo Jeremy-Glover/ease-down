@@ -32,14 +32,14 @@
 
       {{#pikaday-with-time startValue=startDate binding=formValues.startDate as |date|}}
         <div class="mdl-textfield mdl-js-textfield">
-          {{pikaday-input class="mdl-textfield__input" value=date}}
+          {{pikaday-input class="mdl-textfield__input" }}
           <label class="mdl-textfield__label" for="sample1">Start Date</label>
         </div>
       {{/pikaday-with-time}}
 
-      {{#pikaday-with-time binding=formValues.endDate as |date|}}
+      {{#pikaday-with-time startValue=endDate binding=formValues.endDate as |date|}}
         <div class="mdl-textfield mdl-js-textfield">
-          {{pikaday-input class="mdl-textfield__input" value=date}}
+          {{pikaday-input class="mdl-textfield__input" }}
           <label class="mdl-textfield__label" for="sample1">End Date</label>
         </div>
       {{/pikaday-with-time}}

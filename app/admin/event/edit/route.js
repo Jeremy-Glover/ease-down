@@ -5,7 +5,6 @@ export default Ember.Route.extend({
 
   actions: {
     saveEvent(formValues) {
-      formValues = sameEndDate(formValues);
 
       let event = this.modelFor(this.routeName);
 

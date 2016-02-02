@@ -5,7 +5,6 @@ export default Ember.Route.extend({
 
   actions: {
     submitEvent(formValues) {
-      formValues = sameEndDate(formValues);
 
       let event = this.store.createRecord('event', formValues);
 

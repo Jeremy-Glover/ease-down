@@ -32,8 +32,21 @@
 .featured-header {
   font-family: 'Sigmar One', cursive;
   margin: 1.5rem auto;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 700;
+}
+
+.featured__text {
+  margin: 5px 2rem;
+  font-size: 1.2rem;
+}
+
+.featured__title {
+  font-family: 'Patua One', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+  border-bottom: 1px solid;
 }
 
 .single-event-list__item {
@@ -44,15 +57,6 @@
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 2px;
-}
-
-single-event-list__item-name {
-  font-size: 3rem;
-  margin: 4rem auto;
-  font-family: 'Patua One', cursive;
-  font-weight: 600;
-  letter-spacing: 2px;
-  align-content: center;
 }
 
 .single-event-list__item-img {
@@ -109,20 +113,6 @@ single-event-list__item-name {
 
 .mdl-textfield__input {
   padding: 5px;
-  border-bottom: 1px solid;
-}
-
-.featured__text {
-  margin: 5px 2rem;
-  font-size: 1.2rem;
-
-}
-
-.featured__title {
-  font-family: 'Patua One', cursive;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin: 1rem;
   border-bottom: 1px solid;
 }
 
